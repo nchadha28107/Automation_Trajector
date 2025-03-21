@@ -32,7 +32,7 @@ The framework automates the following tasks:
 ```
 trajector-medical-automation/
 ├── config/
-│   ├── cucumber.js                 # Cucumber configuration file
+│   ├── cucumber.js             # Cucumber configuration file
 ├── src/
 │   ├── features/               # Cucumber feature files
 │   ├── helper/                 # Helper functions and utilities
@@ -52,8 +52,9 @@ trajector-medical-automation/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/nchadha28107/Automation_Trajectory.git
-   cd Automation_Trajectory
+   git clone https://github.com/nchadha28107/Automation_Trajector.git
+
+   cd Automation_Trajector
    ```
 
 2. **Install dependencies:**
@@ -87,7 +88,7 @@ You can customize the test execution using the following command-line parameters
 - **BROWSER**: Specify the browser in which to run the tests. Supported values are `chrome`, `firefox`, and `webkit`. The default is `chrome`. Example:
 
     ```bash
-    npm run test --BROWSER="firefox"
+    npm run test --BROWSER="webkit"
     ```
 
 - **DEVICES**: Specify the device to emulate during the tests. The default is the `iPhone 15`. You can set this to any device defined in Playwright's device list(attached below). Example:
@@ -97,10 +98,10 @@ You can customize the test execution using the following command-line parameters
     ```
 
 Example Command
-To run smoke tests in Firefox on an iPhone 12, you would use:
+To run smoke tests in Webkit on an iPhone 12, you would use:
 
 ```bash
-npm run test --TAGS="@smoke" --BROWSER="firefox" --DEVICES="iPhone 12"
+npm run test --TAGS="@smoke" --BROWSER="webkit" --DEVICES="iPhone 12"
 ```
 You can combine any of these options as needed.
 
